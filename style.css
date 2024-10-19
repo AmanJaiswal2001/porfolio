@@ -1,0 +1,408 @@
+*{
+    box-sizing: content-box;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(244, 240, 240);
+    
+    
+}
+body{
+    background-color: #0b0b0b;
+}
+
+
+
+.Nav{
+display: flex;
+justify-content: space-between;
+
+
+padding: 5px;
+background-color: black;
+color: white;
+height: 4rem;
+align-items: center;
+
+}
+
+img{
+    width: 100px;
+    height: 40px;
+    border-radius: 5%;
+    margin-left: 10px;
+}
+.Link > a{
+    color: white !important;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.sec{
+    display: flex;
+    margin: 15px;
+    background-color: black;
+    color: white;
+    
+    text-align: justify;
+    
+    
+}
+
+ .intro{
+    width: 50%;
+    margin: 50px;
+   
+    
+ }  
+ 
+ 
+ .intro>h1,p{
+    margin: 15px;
+    color: white;
+ }
+
+.image{
+    width: 40%;
+    border-radius: 10px;
+    
+   
+
+}
+.pic{
+   width: 60%;
+  height: 250px;
+  padding-left:200px ;
+}
+
+/* skill */
+
+.skill>h1{
+    
+    margin-left: 50%;
+    margin-top: 25px;
+}
+.skill>ul{
+    padding-left: 90px;
+    text-decoration: none;
+}
+/* project */
+
+.Pro{
+    display: flex;
+    margin: 50px;
+   
+    justify-content: space-between;
+  
+
+    
+}
+
+.card{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    border-radius: 2%;
+    
+    
+    
+}
+
+.imgCard{
+    width: 200px;
+    margin: 15px;
+    height: 50%;
+    
+   
+    
+}
+
+
+.imgCard>img{
+    width: 100%;
+  height: 120px;
+    margin-top: 5px;
+}
+.imgContent{
+    margin: 5px;
+    text-align: center;
+}
+.imgContent>h2{
+    margin-top: -15px;
+}
+
+.imgContent>a{
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+    
+}
+
+/* input form */
+
+.for{
+    width: 500px;
+  
+    height: 400px;
+    margin-top: 15px;
+    margin: auto;
+
+}
+
+.btn{
+    color: white;
+    width: 100px;
+    background-color: blue;
+    padding: 5px;
+    margin-left: 150px;
+    
+    
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+
+
+  #popup-container{
+    position:absolute;
+
+    background-color: red;
+    text-align: justify;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+  
+ 
+
+  }
+  h2{
+    color: #000;
+    cursor: pointer;
+
+  }
+
+  #pop-container{
+    position:absolute;
+
+    background-color: red;
+    text-align: justify;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+  
+ 
+
+  }
+
+  #up-container{
+
+    position:absolute;
+
+    background-color: red;
+    text-align: justify;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+  
+
+  }
+
+
+  .popup-box{
+    width: 300px;
+    background-color: red;
+    
+  }
+
+  .close-btn{
+    background-color: green;
+    width: 50px;
+    margin-left: 45%;
+    padding: 5px;
+    justify-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5%;
+  }
+
+  main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .message {
+    font-size: 1.2rem;
+    color: #ff4d4d;
+    margin-bottom: 1rem;
+    display: none; /* Hidden by default */
+  }
+  
+  .product-list {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .product-list li {
+    background-color: rgb(250, 10, 10);
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Api{
+   
+   display: flex;
+  
+   justify-content: center;
+   margin-top: 25px;
+  }
+
+  input,textarea{
+    width: 400px;
+  }
+
+  .sec2{
+   margin-left:50% ;
+   margin-top:15px;
+  }
+  /* responsive mobile device */
+
+
+  @media (max-width: 768px) {
+
+    .Link>a{
+        display:none ;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+.logo{
+    margin-left: 80px;
+}
+
+  }
+
+  @media (max-width: 768px){
+    .sec{
+        display: block;
+       margin: 0px;
+        text-align: left;
+       
+        display: block;
+        width: 250px;
+        
+    }
+  }
+
+  @media (max-width: 768px){
+    .intro{
+       margin: 5px;
+       width: 230px;
+       text-align: justify;
+    }
+}
+
+ 
+  
+  @media (max-width: 768px){
+    .image{
+     display: none;  
+    }
+  }
+
+  @media (max-width: 768px){
+    .Pro{
+        display: block;
+        margin-left: 5px;
+        margin-top: -5px;
+    }
+  }
+
+  @media (max-width: 768px){
+    .for{
+        width: 200px;
+        margin: 0px;
+        margin: 15px;
+    }
+  }
+  @media (max-width: 768px){
+    input,textarea{
+        
+        width: 200px;
+    }
+  }
+
+  @media (max-width: 768px){
+    .btn{
+        
+    margin-left: 50px;
+       
+    }
+  }
+
+  /* @media (max-width: 768px){
+    .card{
+        margin-left: 5px;
+        display: block;
+    }
+  } */
+
+  .contact>h1{
+    color: white ;
+     margin-left:45%
+
+  }
+  @media (max-width: 768px){
+    .contact>h1{
+        margin-left: 25px;
+    }
+  }
+  @media (max-width: 768px){
+    .skill>h1{
+        
+    margin-left:15px;
+    margin-top: -5px;
+       
+    }
+  }
+
+
+
+  @media (max-width: 768px){
+    .Api{
+margin-top: 60px;
+margin-left: 15px;
+display: block;
+
+
+
+    }}
+
+    @media (max-width: 768px){
+        .sec2{
+            margin-left: 100px;
+        }
+    }
+
+    @media (max-width: 768px){
+        main{
+            margin:0px;
+            display: block;
+        }
+    }
+
+   

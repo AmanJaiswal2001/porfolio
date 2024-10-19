@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="Nav">
+    <div class="logo">
+    <a href="/"> 
+         <img 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7sbnRqfOTHu4ZbgThY0eXhmUZ34dRPc7F7A&s"/> 
+   </a>
+</div >
+    <div class="Link">
+        <a href="/">Home</a>
+        <a href="#">About</a>
+        <a href="#">Skill</a>
+        <a href="#">Project</a>
+        <a href="#">ContactUs</a>
+    </div>
+   </header>
+    
+   <section class="sec">
+    <div class="intro" >
+<h1>Frontend Developer&React Developer</h1>
+<p>Hello, I am Aman Jaiswal, a software developer. I recently completed my B.Tech from Veer Bahadur Singh Purvanchal University I am interested in web development and currently have knowledge of HTML, CSS, and JavaScript
+.I have a done a many project in react js like a Online food app,Amazing movies Suggetion web app,Youtube-Clone and More.   
+</p>
+    </div>
+    <div class="image"  >
+<img class="pic"
+src="images/aman.jpg"/>
+    </div>
+   </section>
+<!-- skill -->
+   <section class="skill">
+    <h1>My Top Three Skill</h1>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+
+   </section>
+   <!-- project -->
+<section >
+<h1 class="sec2">Project</h1>
+<div class="Pro">
+  
+  <div  class="card"> 
+    <div class="imgCard">
+        <img src="images/movie.jpg"/>
+    </div>
+    <div class="imgContent">
+        <button class="show-popup" onclick="howPopup()">
+            <h2>Movies Suggestion Web Application</h2>
+        </button>
+       
+    <a href="https://github.com/AmanJaiswal2001/Netflix">Git-Hub Link</a>
+    </div>
+    <div id="pop-container" style="display:none;">
+        <div class="popup-box">
+            
+            <h2 style="margin: 5px;">Brief Description Movie Suggetion Web App</h2> 
+            <p>I have created Movie Suggetion Web App is built using React.js , Tailwind CSS, and firebase offering a responsive and modern UI with live Tmdb API integration for real-time tmdb movie data, trending,popular,horror,nowplaying   ensuring a seamless and efficient user experience.</p>
+          <div class="close-btn" onclick="losePopup()">Ok</div>
+        </div>
+
+    </div>
+</div>
+<div  class="card">
+    <div class="imgCard">
+        <img src="images/Untitled.jpg"/>
+    </div>
+    <div class="imgContent">
+        <button class="show-popup" onclick="showPopup()">
+            <h2 >Youtube-Clone Web Application</h2>
+        </button>
+          <a href="https://github.com/AmanJaiswal2001/my-youtube">Git-Hub Link</a>
+    </div>
+    <div id="popup-container" style="display:none;">
+        <div class="popup-box">
+            <p></p>
+            <h2 style="margin: 5px;">Brief Description Youtube-Clone</h2> 
+   <p>I have created Youtube-Clone Web App is built using React.js and Tailwind CSS, offering a responsive and modern UI with live Youtube API integration for real-time Youtube video data, Live Comment, and Watch video ensuring a seamless and efficient user experience.</p>
+ <div class="close-btn" onclick="closePopup()">Ok</div>
+        </div>
+
+    </div>
+</div>
+<div class="card">
+    <div class="imgCard">
+        <img 
+        src="images/Weekly-NL-Zomato.png"/>
+    </div>
+    <div class="imgContent">
+        <button class="show-popup" onclick="openPopup()">
+            <h2 >Online Food web Application</h2>
+        </button>
+           <a 
+         href="https://github.com/AmanJaiswal2001/swigy">Git-Hub Link</a>
+    </div>
+    <div id="up-container" style="display:none;">
+        <div class="popup-box">
+            <p></p>
+            <h2 style="margin: 5px;">Brief Description Food App</h2> 
+   <p>I have created food delivery app is built using React.js and Tailwind CSS, offering a responsive and modern UI with live Swiggy API integration for real-time restaurant data, menus, and order tracking, ensuring a seamless and efficient user experience.</p>
+  <div class="close-btn" onclick="hidePopup()">Ok</div>
+        </div>
+
+    </div>
+</div>  
+   
+</div>
+
+</section>
+
+
+
+
+<section class="contact">
+   <h1 >Contact Form</h1>
+<form onsubmit=" return validateForm()"
+class="form"
+id="contactForm">
+    <div class="for">
+    <div class= "input">
+        <label> Your Name
+            <br>
+            <input  id="name"
+            style="padding:15px;  color:black ; margin-top:10px;outline:none"  type="text" placeholder="Enter Your Name">
+                </label>
+                <div id="nameError" class="error" style="color: red; margin-top: 5px;"></div>
+    </div>
+   <br> <br>
+   <div class= "input">
+    <label>Enter Your Email
+        <br>
+        <input  id="email" 
+        style="padding:15px;  color:black ;margin-top:10px; outline:none"  type="text" placeholder="Enter Your Email">
+            </label>
+            <div id="emailError" class="error" style="color: red; margin-top: 5px;"></div>
+    
+         
+   </div>
+   <br> <br>
+   <div class= "input">
+    Enter Your message
+    <br>
+        <textarea id="message" 
+        style="padding:15px;  height:50px; color:black ;margin-top:10px; outline:none" 
+         placeholder="Enter Your Message">
+            </textarea>
+            </label>
+
+            <div id="messageError" class="error" style="color: red; margin-top: 5px;"></div>
+       
+ 
+   </div>
+   <br>
+                <button type="submit" class="btn">Submit</button>
+            </div>
+
+            </form>
+        </section>
+
+<h1 class="Api">Intregate the Api </h1>
+
+            <main>
+                <div id="message" class="message"></div>
+                <ul id="products" class="product-list"></ul>
+              </main>
+<script src="index.js"></script>
+</body>
+</html>
